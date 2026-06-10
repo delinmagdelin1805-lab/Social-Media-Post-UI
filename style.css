@@ -1,0 +1,274 @@
+/* Reset */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* Body */
+
+body{
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#0f172a;
+
+    font-family:Arial, sans-serif;
+
+    padding:20px;
+}
+
+/* Card */
+
+.post-card{
+    width:100%;
+
+    max-width:420px;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    background:
+        linear-gradient(
+            135deg,
+            #2563eb,
+            #7c3aed
+        );
+
+    color:white;
+
+    position:relative;
+
+    box-shadow:
+        0 20px 50px rgba(0,0,0,0.4);
+}
+
+/* Top */
+
+.top{
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px;
+}
+
+/* Profile */
+
+.profile{
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+}
+
+/* Profile Image */
+
+.profile img{
+    width:55px;
+    height:55px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:2px solid white;
+}
+
+/* Name */
+
+.profile h3{
+    font-size:18px;
+}
+
+/* Sponsored */
+
+.profile span{
+    font-size:13px;
+
+    color:#e2e8f0;
+}
+
+/* Icon */
+
+.top i{
+    font-size:20px;
+
+    cursor:pointer;
+}
+
+/* Content */
+
+.content{
+    padding:10px 25px 30px;
+}
+
+/* Tag */
+
+.tag{
+    display:inline-block;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    background:rgba(255,255,255,0.15);
+
+    margin-bottom:20px;
+
+    font-size:13px;
+
+    letter-spacing:1px;
+}
+
+/* Heading */
+
+.content h1{
+    font-size:46px;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+}
+
+/* Paragraph */
+
+.content p{
+    font-size:18px;
+
+    line-height:1.7;
+
+    color:#e2e8f0;
+
+    margin-bottom:28px;
+}
+
+/* Button */
+
+button{
+    padding:15px 32px;
+
+    border:none;
+
+    border-radius:50px;
+
+    background:white;
+
+    color:#111827;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+/* Hover */
+
+button:hover{
+    transform:
+        translateY(-5px)
+        scale(1.05);
+}
+
+/* Illustration */
+
+.illustration{
+    display:flex;
+
+    justify-content:center;
+
+    padding:10px 20px 30px;
+}
+
+/* Image */
+
+.illustration img{
+    width:240px;
+
+    animation:float 4s ease-in-out infinite;
+}
+
+/* Bottom */
+
+.bottom{
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    padding:20px;
+
+    background:rgba(0,0,0,0.15);
+
+    backdrop-filter:blur(10px);
+}
+
+/* Actions */
+
+.action{
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+/* Hover */
+
+.action:hover{
+    transform:scale(1.1);
+}
+
+/* Action Icons */
+
+.action i{
+    font-size:18px;
+}
+
+/* Animation */
+
+@keyframes float{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
+/* Responsive */
+
+@media(max-width:500px){
+
+    .content h1{
+        font-size:36px;
+    }
+
+    .content p{
+        font-size:16px;
+    }
+
+    .illustration img{
+        width:190px;
+    }
+}
